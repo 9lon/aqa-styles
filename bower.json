@@ -1,5 +1,6 @@
 {
   "name": "aqa-styles",
+  "version": "0.0.1",
   "main": "aqa-styles.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2",

@@ -1,24 +1,33 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="./flexbox-grid.html">
+<link rel="import" href="./bower_components/aqa-font/aqa-trirong-font.html">
 
 <dom-module id="aqa-styles">
   <template>
-    <style>
-      :host {
-        display: block;
+    <style include="flexbox-grid">
+     .page-container {
+        padding: 15px;
+      }
+  
+      * {
+        font-family: TrirongRegular;
+      }   
+      .font-MitrLight{
+        font-family: MitrLight;
+      }
+      div[main-title]{
+        font-family: MitrLight;
+      }
+
+      div.header{
+        font-family: MitrLight;
       }
     </style>
-    <h2>Hello [[prop1]]!</h2>
+     <h2>Hello [[prop1]]!</h2> 
   </template>
 
   <script>
-    /**
-     * `aqa-styles`
-     * 
-     *
-     * @customElement
-     * @polymer
-     * @demo demo/index.html
-     */
+   
     class AqaStyles extends Polymer.Element {
       static get is() { return 'aqa-styles'; }
       static get properties() {
