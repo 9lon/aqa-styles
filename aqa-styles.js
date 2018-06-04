@@ -1,10 +1,19 @@
-<link rel="import" href="../polymer/polymer-element.html">
-<link rel="import" href="../aqa-font/aqa-trirong-font.html">
-<link rel="import" href="./flexbox-grid.html">
-
+import '@polymer/polymer/polymer-element.js';
+import '@aqa/aqa-font/aqa-trirong-font.js';
+import './flexbox-grid.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
+// 
+$_documentContainer.innerHTML = `
 <dom-module id="aqa-styles">
   <template>
     <style include="flexbox-grid">
+    h2{
+      color:red;
+    }
+    .test{
+      color:blue;
+    }
       paper-checkbox,
       paper-radio-button {
         font-family: TrirongLight;
@@ -50,4 +59,6 @@
       }
     </style>
   </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);

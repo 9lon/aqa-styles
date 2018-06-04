@@ -1,6 +1,8 @@
-<link rel="import" href="../polymer/polymer-element.html">
+import '@polymer/polymer/polymer-element.js';
+const $_documentContainer = document.createElement('template');
+$_documentContainer.setAttribute('style', 'display: none;');
 
-<dom-module id="flexbox-grid">
+$_documentContainer.innerHTML = `<dom-module id="flexbox-grid">
     <template>
         <style>
             .container-fluid,
@@ -979,9 +981,7 @@
             }
         </style>
     </template>
-</dom-module>
-
-<dom-module id="flexbox-grid-remove-padding">
+</dom-module><dom-module id="flexbox-grid-remove-padding">
     <template>
         <style>
             .row {
@@ -1097,4 +1097,6 @@
             }
         </style>
     </template>
-</dom-module>
+</dom-module>`;
+
+document.head.appendChild($_documentContainer.content);
