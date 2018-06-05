@@ -1,5 +1,5 @@
 {
-  "name": "@aqa/aqa-styles",
+  "name": "@nylon/aqa-styles",
   "version": "1.0.0",
   "resolutions": {
     "inherits": "2.0.3",
