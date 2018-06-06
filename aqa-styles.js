@@ -1,5 +1,5 @@
 import '@polymer/polymer/polymer-element.js';
-import '@nylon/aqa-font/aqa-trirong-font.js';
+import '@9lon/aqa-font/aqa-trirong-font.js';
 import './flexbox-grid.js';
 const $_documentContainer = document.createElement('template');
 $_documentContainer.setAttribute('style', 'display: none;');
